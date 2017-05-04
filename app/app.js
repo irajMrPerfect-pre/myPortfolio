@@ -83,6 +83,23 @@ myPortfolio.run(function($rootScope, $state,$location) {
       ncyBreadcrumb: {
         
       }
+    }).state('home.about', {
+      url: "/aboutme",
+      views: {
+        "currentSection@": {
+          templateUrl: baseUrl + "about.min.html",
+          controller: "aboutCtrl",
+    
+            resolve: {
+          loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+             return $ocLazyLoad.load('../controllers/about.js');
+    }]
+  }
+        }
+      },
+      ncyBreadcrumb: {
+        
+      }
     });
 
   })

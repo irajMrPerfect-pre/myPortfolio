@@ -2,14 +2,14 @@ require.config({
   urlArgs: "bust=" + (new Date()).getTime(),
   waitSeconds: 0,
   paths: {
-    'angular': '../lib/angular.min',
-    'ui-router': '../lib//angular-ui-router.min',
-    'jquery': '../lib//jquery.min',
-    'bootstrapjs':'../lib///bootstrap.min',
+    'angular': '../lib/js/angular.min',
+    'ui-router': '../lib/js//angular-ui-router.min',
+    'jquery': '../lib/js//jquery.min',
+    'bootstrapjs':'../lib/js///bootstrap.min',
     'app':'../app/app',
-    'ncy-breadcrumb':'../lib//angular-breadcrumb.min',
-    'updateMeta':'../lib//update-meta.min',
-    'ocLazyLoad':'../../lib/ocLazyLoad.require.min',
+    'ncy-breadcrumb':'../lib/js//angular-breadcrumb.min',
+    'updateMeta':'../lib/js//update-meta.min',
+    'ocLazyLoad':'../../lib/js/ocLazyLoad.require.min',
     'triggerapp':'../../app/apptrigger'
   },
   shim: {
