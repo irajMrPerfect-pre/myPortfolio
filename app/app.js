@@ -56,10 +56,10 @@ myPortfolio.run(function($rootScope, $state,$location) {
       service: $provide.service
     };
     var baseUrl;
-    // $locationProvider.html5Mode({
-    //   enabled: true,
-    //   requireBase: false
-    // });
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
     $urlRouterProvider.otherwise('/404');
     baseUrl = "/views/";
       return $stateProvider.state('home', {
